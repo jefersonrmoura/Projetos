@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio - Jeferson Moura</title>
+    <style>
+        /* ====== ESTILO GLOBAL ====== */
+        body {
+            font-family: "Segoe UI", Roboto, Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #0d1117;
+            color: #e6edf3;
+            line-height: 1.6;
+        }
+
+        h1, h2, h3 {
+            color: #58a6ff;
+        }
+
+        a {
+            color: #58a6ff;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        section {
+            padding: 60px 20px;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        /* ====== CABEÇALHO ====== */
+        header {
+            background-color: #161b22;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            border-bottom: 1px solid #30363d;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 1.5rem;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            margin: 0;
+            padding: 0;
+            gap: 20px;
+        }
+
+        nav a {
+            font-weight: bold;
+        }
+
+        /* ====== APRESENTAÇÃO (HERO) ====== */
+        #apresentacao {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            padding: 80px 20px;
+            background: linear-gradient(135deg, #0d1117, #161b22);
+            border-bottom: 1px solid #30363d;
+        }
+
+        #apresentacao img {
+            width: 180px;
+            height: 180px;
+            border-radius: 50%;
+            border: 3px solid #58a6ff;
+            margin-bottom: 20px;
+            object-fit: cover;
+        }
+
+        #apresentacao h2 {
+            font-size: 2rem;
+            margin-bottom: 10px;
+        }
+
+        #apresentacao p {
+            font-size: 1.1rem;
+            color: #c9d1d9;
+        }
+
+        /* ====== SOBRE MIM ====== */
+        #sobre {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 20px;
+        }
+
+        /* ====== PROJETOS ====== */
+        #projetos ul {
+            list-style: none;
+            padding: 0;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        #projetos li {
+            background: #161b22;
+            padding: 20px;
+            border-radius: 8px;
+            transition: transform 0.2s;
+            border: 1px solid #30363d;
+        }
+
+        #projetos li:hover {
+            transform: translateY(-5px);
+            background: #1e2633;
+        }
+
+        /* ====== CONTATO ====== */
+        #contato {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        input, textarea {
+            padding: 12px;
+            border-radius: 6px;
+            border: 1px solid #30363d;
+            background: #161b22;
+            color: #e6edf3;
+        }
+
+        input[type="submit"] {
+            background-color: #238636;
+            border: none;
+            cursor: pointer;
+            font-weight: bold;
+            transition: background 0.3s;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #2ea043;
+        }
+
+        /* ====== RODAPÉ ====== */
+        footer {
+            background-color: #161b22;
+            text-align: center;
+            padding: 20px;
+            border-top: 1px solid #30363d;
+        }
+
+        footer p {
+            margin: 5px 0;
+        }
+
+        /* ====== RESPONSIVIDADE ====== */
+        @media (max-width: 768px) {
+            #contato {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Cabeçalho -->
+    <header>
+        <h1>Jeferson Rodrigues Moura</h1>
+        <nav>
+            <ul>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#projetos">Projetos</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Seção de Apresentação -->
+    <section id="apresentacao" class="container">
+        <img src="fotoperfil.jpeg" alt="Foto de Jeferson Moura">
+        <h2>Bem-vindo ao meu portfólio</h2>
+        <p>Analista de Suporte Júnior | Estudante de Análise e Desenvolvimento de Sistemas</p>
+    </section>
+
+    <!-- Sobre Mim -->
+    <section id="sobre" class="container">
+        <h2>Sobre Mim</h2>
+        <p>
+            Tenho 21 anos, sou estudante de Análise e Desenvolvimento de Sistemas pela Newton Paiva 
+            e atuo como Analista de Suporte no Grupo Fácil. 
+            Tenho experiência com atendimento, suporte, criação de apresentações, uso de Power BI, 
+            manipulação de planilhas e extração de dados em SQL.
+        </p>
+        <p>
+            Me interesso por tecnologia, análise de dados e desenvolvimento de sistemas, 
+            buscando constantemente aprendizado e evolução na área de T.I.
+        </p>
+    </section>
+
+    <!-- Projetos -->
+    <section id="projetos" class="container">
+        <h2>Projetos</h2>
+        <ul>
+            <li>Projeto em Power BI - Relatórios e Dashboards</li>
+            <li>Criação de apresentações institucionais</li>
+            <li>Experimentos em banco de dados SQL</li>
+        </ul>
+    </section>
+
+    <!-- Contato -->
+    <section id="contato" class="container">
+        <div>
+            <h2>Contato</h2>
+            <p>Email: <a href="mailto:jefersonmourar@gmail.com">jefersonmourar@gmail.com</a></p>
+            <p>Telefone: (31) 98342-6012</p>
+            <p>Endereço: Belo Horizonte - MG</p>
+        </div>
+        <form>
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome">
+
+            <label for="mensagem">Mensagem:</label>
+            <textarea id="mensagem" name="mensagem"></textarea>
+
+            <input type="submit" value="Enviar">
+        </form>
+    </section>
+
+    <!-- Rodapé -->
+    <footer>
+        <p>&copy; 2025 - Jeferson Moura</p>
+        <p>
+            <a href="https://www.linkedin.com/in/jeferson-moura-78a15821a" target="_blank">LinkedIn</a> |
+            <a href="https://github.com/jefersonrmoura/Projetos" target="_blank">GitHub</a>
+        </p>
+    </footer>
+
+</body>
+</html>
